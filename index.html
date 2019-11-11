@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab_3</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="main-container">
+		<header id="id_header">
+			<div class="logo-cnt">SHPPNG</div>
+
+			<nav class="header-nav">
+				<label>
+					<input type="radio" name="radio-nav" hidden>
+					<p>Shopping Bag ►</p>
+				</label>
+
+				<label>
+					<input type="radio" name="radio-nav" hidden checked>
+					<p>Checkout ►</p>
+				</label>
+
+				<label>
+					<input type="radio" name="radio-nav" hidden>
+					<p>Confirmation</p>
+				</label>
+			</nav>
+
+			<div class="buy-cnt">
+				<i class="fa fa-shopping-cart"></i>
+				<span class="buy-cnt-qty">1</span>
+			</div>
+		</header>
+
+		<main>
+			<article class="main-column -left">
+				<form class="form-personal-information">
+					<h1>Personal information</h1>
+					<div class="form-container">
+						<div class="form-column -left">
+							<h5>First Name</h5>
+							<input type="text" name="FirstName">
+						</div>
+
+						<div class="form-column -right">
+							<h5>Last Name</h5>
+							<input type="text" name="LastName">
+						</div>
+					</div>
+
+					<div class="form-container">
+						<h5>Email Adress</h5>
+						<input type="text" name="EmailAdress">
+					</div>
+					
+					<div class="form-container">
+						<h5>Street</h5>
+						<input type="text" name="Street">
+					</div>
+
+					<div class="form-container">
+						<div class="form-column -left">
+							<h5>City</h5>
+							<input type="text" name="City">
+						</div>
+						
+						<div class="form-column -right">
+							<h5>Country</h5>
+							<input list="Country"> 
+        						<datalist id="Country"> 
+            						<option value="France" /> 
+            						<option value="Poland" /> 
+            						<option value="Ukraine" /> 
+            						<option value="Russia" /> 
+            						<option value="German" /> 
+        						</datalist> 
+						</div>
+					</div>
+
+					<div class="form-container">
+						<h5>Phone number</h5>
+						<div class="form-phone">
+							<input class="CountryCode" type="text" maxlength="3" pattern="\d{1,2}" placeholder="+33">
+							<input class="Number" type="text" maxlength="10" pattern="\d{7,10}">
+						</div>
+					</div>
+				</form>
+			</article>
+
+			<article class="main-column -right">
+				<form class="form-delivery">
+					<h1>Delivery</h1>
+					<h5>Delivery free</h5>
+					<div class="form-big-container">
+						<input id="x1" type="radio" name="delivery" hidden>
+						<label for="x1" class="form-column -left">
+							<p class="price">0<span>$</span></p>
+							<p class="comment">3-4 weeks</p>
+						</label>
+						
+						<input id="x2" type="radio" name="delivery" hidden checked>
+						<label for="x2" class="form-column -right">
+							<p class="price">5<span>$</span></p>
+							<p class="comment">2-5 days</p>
+						</label>
+					</div>
+
+					<p>
+						Estimated delivery date: <b>August 4th.</b><br>
+						Every package has a tracking number.
+					</p>
+				</form>
+
+				<div class="article-options">
+					<label>
+						<input type="checkbox" checked>
+						Subscribe to our newsletter
+					</label>
+
+					<label>
+						<input type="checkbox">
+						Create an account
+					</label>
+				</div>
+
+				<button>Confirm my order</button>
+			</article>
+		</main>
+	</div>
+</body>
+</html>
